@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Trombone";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+<h2><b>Trombone</b></h2>
+<div class="row">
+    <div class="columnInstrument">
+        <img src="~/Content/Images/trombone.jpg" alt="Trumpet" />
+        <p>@Html.ActionLink("New", "Trombone", "Rentals", new { price = "New - $60 a month" }, new { @class = "btn btn-primary btn-large" })</p>
+        <p>@Html.ActionLink("Used", "Trombone", "Rentals", new { price = "Used - $35 a month" }, new { @class = "btn btn-primary btn-large" })</p>
+        <p>@ViewBag.value</p>
+    </div>
+</div>
+<p style="font-size:small">
+    Once the 18 months has been achieved, the client owns the instrument. If they return it at any time before 3 months there
+    will be a $200 re-stocking fee. If they return it after 3 months they forfeit any equity in the instrument.
+</p>
+

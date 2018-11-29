@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Summary";
+}
+
+<h2>Summary</h2>
+<p>Thank you @ViewBag.Client for ordering a @ViewBag.Instrument from BlowOut!</p>
+<br />
+<p>Be sure to pick up your @ViewBag.Instrument quickly so you can begin practicing :)</p>
+<br />
+<p>Your order ID is @ViewBag.OrderID should you ever need further details.</p>
+<p>Month Price: @ViewBag.MonthlyPrice</p>
+<p>Total over 18 Months: @ViewBag.Price18Month</p>
+<p>Condition: @ViewBag.Type</p>
+<p>Instrument: @ViewBag.Instrument</p>
+<img src="/content/@ViewBag.Instrument .jpeg" alt="@ViewBag.Instrument" />

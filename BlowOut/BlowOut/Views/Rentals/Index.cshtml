@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/Site.css">
+</head>
+<h2>Rental Options</h2>
+<div class="row">
+    <a href="@Url.Action("Create", "Clients")">
+        <img src="~/Content/Images/trumpet.jpg" alt="Trumpet" class="column" />
+    </a>
+    <a href="@Url.Action("Trombone", "Rentals")">
+        <img src="~/Content/Images/trombone.jpg" alt="Trombone" class="column" />
+    </a>
+    <a href="@Url.Action("Tuba", "Rentals")">
+        <img src="~/Content/Images/tuba.jpg" alt="Tuba" class="column" />
+    </a>
+</div>
+<div class="row">
+    <a href="@Url.Action("Flute", "Rentals")">
+        <img src="~/Content/Images/flute.jpg" alt="Flute" class="column" />
+    </a>
+    <a href="@Url.Action("Clarinet", "Rentals")">
+        <img src="~/Content/Images/clarinet.jpg" alt="Clarinet" class="column" />
+    </a>
+    <a href="@Url.Action("Saxaphone", "Rentals")">
+        <img src="~/Content/Images/saxophone.jpg" alt="Saxaphone" class="column" />
+    </a>
+</div>
+
